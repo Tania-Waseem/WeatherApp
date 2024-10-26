@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Main header background color */
+  min-height: 100vh; /* Ensure the header occupies full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb;
+}
+
+/* Cloud animation keyframes */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Cloud styles */
+.cloud {
+  position: absolute;
+  width: 300px; /* Adjust cloud width */
+  height: 100px; /* Adjust cloud height */
+  background: white;
+  border-radius: 50%; /* Circular shape */
+  opacity: 0.6;
+  filter: blur(10px); /* Soft blur effect */
+}
+
+/* Individual cloud animations */
+.cloud-1 {
+  left: -300px; /* Start position off the left side */
+  top: 10%; /* Vertical position */
+  animation: moveClouds 25s linear infinite; /* Animation duration and type */
+}
+
+.cloud-2 {
+  left: -500px; /* Start position off the left side */
+  top: 30%; /* Vertical position */
+  animation: moveClouds 35s linear infinite; /* Animation duration and type */
+}
+
+.cloud-3 {
+  left: -700px; /* Start position off the left side */
+  top: 50%; /* Vertical position */
+  animation: moveClouds 40s linear infinite; /* Animation duration and type */
+}
