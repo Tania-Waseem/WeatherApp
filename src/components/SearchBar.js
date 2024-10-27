@@ -12,14 +12,14 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className="text-center p-4">
+    <div className="flex justify-center mb-4">
       <input
         type="text"
         placeholder="Enter a City..."
         value={city}
         onChange={(e) => setCity(e.target.value)}
         onKeyDown={handleKeyDown}
-        className="py-3 px-6 w-[700px] text-lg rounded-3x1 border border-gray-200 text-gray-600 placeholder:text-gray-400 focus:outline-none bg-white-600/100 shadow-md"
+        className="w-full sm:w-3/4 lg:w-4/5 px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-gray-800 rounded-md"
       />
     </div>
   );

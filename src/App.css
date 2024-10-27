@@ -68,3 +68,7 @@
   top: 50%; /* Vertical position */
   animation: moveClouds 40s linear infinite; /* Animation duration and type */
 }
+/* If you have a custom CSS class using this image */
+.bg-clouds {
+  background-image: url('./assets/clouds.jpg');
+}
